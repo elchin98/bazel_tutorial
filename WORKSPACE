@@ -31,8 +31,16 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "com.jakewharton.timber:timber:5.0.1",
+#        "androidx.appcompat:appcompat:1.6.0",
+#        "androidx.core:core-ktx:1.7.0",
+        "com.github.santalu:maskara:1.0.0",
+#        "com.google.android.material:material:1.7.0"
     ],
     repositories = [
         "https://repo.maven.apache.org/maven2",
+        "https://maven.google.com",
+        "https://repo1.maven.org/maven2",
+        "https://jitpack.io"
     ],
+    version_conflict_policy = "pinned"
 )

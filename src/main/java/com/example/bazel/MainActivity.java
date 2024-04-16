@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
-//import timber.log.Timber;
+import timber.log.Timber;
+//import androidx.appcompat.app.AppCompatActivity;
+
 
 /**
  * Main class for the Bazel Android "Hello, World" app.
@@ -16,7 +18,7 @@ public class MainActivity extends Activity {
     super.onCreate(savedInstanceState);
     Log.v("Bazel", "Hello, Android");
 
-//    Timber.e("");
+    Timber.e("elcin");
 
     setContentView(R.layout.activity_main);
 
