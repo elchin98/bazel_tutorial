@@ -26,39 +26,48 @@
       android:layout_marginTop="16dp"
       android:text="@string/click_me_button"/>
 
+<!--  <com.github.mikephil.charting.charts.BarChart-->
+<!--      android:id="@+id/bar_chart_tip"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="400dp"-->
+<!--      android:layout_marginStart="15dp"-->
+<!--      android:layout_marginTop="90dp"-->
+<!--      android:layout_marginEnd="15dp"-->
+<!--      />-->
+
 
 <!--  <com.google.android.material.textfield.TextInputLayout-->
 <!--      android:id="@+id/et_enter_number"-->
 <!--      android:layout_width="match_parent"-->
 <!--      android:layout_height="wrap_content"-->
 <!--      android:layout_marginTop="12dp"-->
-<!--      android:background="@drawable/rounded_edit_text"-->
 <!--      android:letterSpacing="0.1"-->
 <!--      app:boxStrokeWidth="0dp"-->
 <!--      app:hintEnabled="false"-->
 <!--      app:boxStrokeWidthFocused="0dp"-->
 <!--      app:prefixTextAppearance="@style/TextAppearance.AppCompat.Small"-->
-<!--      app:prefixTextColor="@color/black"-->
 <!--      android:gravity="center_horizontal"-->
 <!--      app:prefixText="+994 "-->
 <!--      android:orientation="horizontal"-->
 <!--      android:layout_marginRight="18dp"-->
 <!--      android:layout_marginLeft="18dp"-->
 <!--      >-->
-    <com.santalu.maskara.widget.MaskEditText
-        android:id="@+id/et_enter_number_login"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:inputType="number"
-        app:mask="__ ___ __ __"
-        app:maskCharacter="_"
-        app:maskStyle="completable"
-        android:autofillHints="phone"
-        android:hint="+994 ___ __ __"
-        android:textSize="14sp"
-        android:textColor="#FF000000"
-        android:textColorHint="#424242"
-        />
+
+
+<!--    <com.santalu.maskara.widget.MaskEditText-->
+<!--        android:id="@+id/et_enter_number_login"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:inputType="number"-->
+<!--        app:mask="__ ___ __ __"-->
+<!--        app:maskCharacter="_"-->
+<!--        app:maskStyle="completable"-->
+<!--        android:autofillHints="phone"-->
+<!--        android:hint="+994 ___ __ __"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textColor="#FF000000"-->
+<!--        android:textColorHint="#424242"-->
+<!--        />-->
 
 
 <!--  </com.google.android.material.textfield.TextInputLayout>-->

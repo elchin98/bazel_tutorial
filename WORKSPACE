@@ -8,7 +8,6 @@ http_archive(
     urls = ["https://github.com/bazelbuild/rules_android/archive/v0.1.1.zip"],
 )
 
-#load("@rules_android//android:repositories.bzl", "android_sdk_repository")
 
 android_sdk_repository(
     name = "androidsdk"
@@ -30,11 +29,39 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "com.jakewharton.timber:timber:5.0.1",
-#        "androidx.appcompat:appcompat:1.6.0",
-#        "androidx.core:core-ktx:1.7.0",
+
+        # from firebase
+        "androidx.appcompat:appcompat:1.5.1",
+
+        # Jetpack Compose Dependencies
+        "androidx.activity:activity-compose:1.6.0",
+        "androidx.compose.material:material:1.2.1",
+        "androidx.compose.ui:ui:1.2.1",
+        "androidx.compose.ui:ui-tooling:1.2.1",
+        "androidx.compose.compiler:compiler:1.3.2",
+        "androidx.compose.runtime:runtime:1.2.1",
+
+        # Dependencies needed to manage version conflicts
+        "androidx.core:core:1.6.0",
+        "androidx.core:core-ktx:1.6.0",
+        "androidx.savedstate:savedstate-ktx:1.2.0",
+        "androidx.savedstate:savedstate:1.2.0",
+        "androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1",
+        "androidx.lifecycle:lifecycle-livedata-core:2.5.1",
+        "androidx.lifecycle:lifecycle-livedata:2.5.1",
+        "androidx.lifecycle:lifecycle-process:2.5.1",
+        "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1",
+        "androidx.lifecycle:lifecycle-runtime:2.5.1",
+        "androidx.lifecycle:lifecycle-service:2.5.1",
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1",
+        "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1",
+        "androidx.lifecycle:lifecycle-viewmodel:2.5.1",
+
+         # my dependencies
         "com.github.santalu:maskara:1.0.0",
-#        "com.google.android.material:material:1.7.0"
+        "com.jakewharton.timber:timber:5.0.1",
+#        "com.github.PhilJay:MPAndroidChart:v3.1.0",
+#        "com.github.mikephil:charting:v3.1.0",
     ],
     repositories = [
         "https://repo.maven.apache.org/maven2",
